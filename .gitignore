@@ -1,0 +1,7 @@
+node_modules
+dist
+.codex
+.env
+.env.local
+*.local
+output/playwright

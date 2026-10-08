@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Концепт интерьера Gamer Cave</title>
+  <desc id="desc">Абстрактная технологичная пещера с игровыми местами, созданная для демонстрационного макета.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080b0a"/><stop offset=".48" stop-color="#111b19"/><stop offset="1" stop-color="#06100d"/></linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#18201e"/><stop offset="1" stop-color="#0b1110"/></linearGradient>
+    <radialGradient id="light"><stop stop-color="#78f2c3" stop-opacity=".42"/><stop offset="1" stop-color="#78f2c3" stop-opacity="0"/></radialGradient>
+    <filter id="noise"><feTurbulence baseFrequency=".7" numOctaves="3" stitchTiles="stitch"/><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .08 0"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <path d="M0 0h1600v162l-143 74-236-83-184 92-220-121-236 104-221-93L131 238 0 190Z" fill="#151b1a"/>
+  <path d="M0 1000V286l164-91 214 136 225-99 206 140 246-128 222 91 175-102 148 75v692Z" fill="url(#stone)" opacity=".78"/>
+  <ellipse cx="1160" cy="400" rx="500" ry="420" fill="url(#light)"/>
+  <path d="M778 1000 972 408h456l172 592Z" fill="#0a0f0e" opacity=".7"/>
+  <g transform="translate(800 350)">
+    <g transform="translate(0 80)"><path d="M0 350 75 76h290l55 274Z" fill="#121918" stroke="#314b43" stroke-width="3"/><rect x="96" y="100" width="210" height="125" rx="8" fill="#08110f" stroke="#62deb2" stroke-width="4"/><path d="m118 202 44-66 54 37 38-48 34 77Z" fill="#21483d"/><rect x="181" y="229" width="40" height="50" fill="#334a44"/><path d="M141 279h122l28 24H113Z" fill="#1c2a27"/><path d="M92 330h225" stroke="#76efc1" stroke-width="5" filter="url(#glow)"/></g>
+    <g transform="translate(390 0) scale(.8)"><path d="M0 350 75 76h290l55 274Z" fill="#121918" stroke="#314b43" stroke-width="3"/><rect x="96" y="100" width="210" height="125" rx="8" fill="#08110f" stroke="#e2a654" stroke-width="4"/><path d="m118 202 44-66 54 37 38-48 34 77Z" fill="#413420"/><rect x="181" y="229" width="40" height="50" fill="#334a44"/><path d="M141 279h122l28 24H113Z" fill="#1c2a27"/><path d="M92 330h225" stroke="#ffb860" stroke-width="5" filter="url(#glow)"/></g>
+  </g>
+  <path d="M877 325h511" stroke="#6ee5b8" stroke-width="4" stroke-dasharray="120 22" opacity=".7" filter="url(#glow)"/>
+  <path d="M900 782h558" stroke="#d99a4c" stroke-width="3" opacity=".45"/>
+  <rect width="1600" height="1000" filter="url(#noise)" opacity=".55"/>
+</svg>

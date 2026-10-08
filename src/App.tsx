@@ -121,7 +121,7 @@ function Hero() {
   return (
     <section id="club" className="hero section-shell">
       <div className="hero-media" aria-hidden="true">
-        <img src="/hero-cave.svg" alt="" width="1600" height="1000" fetchPriority="high" />
+        <img src="/photos/main-hall.png" alt="" width="919" height="645" fetchPriority="high" />
         <div className="hero-scan" />
       </div>
       <div className="hero-copy reveal-sequence">
@@ -344,11 +344,11 @@ function Gallery() {
 
   return (
     <section id="gallery" className="content-section section-shell">
-      <SectionHeading index="06" eyebrow="Пространство" title="Загляни внутрь" text="Оригинальные концептуальные изображения показывают направление будущей фотосъёмки и легко заменяются реальными кадрами." />
+      <SectionHeading index="06" eyebrow="Пространство" title="Загляни внутрь" text="Настоящие фотографии Gamer Cave: игровые места, оборудование, фирменное освещение и входная зона клуба." />
       <div className="gallery-grid">
-        {gallery.map((item, index) => <button key={item.src} className={`gallery-item gallery-item-${index + 1}`} onClick={() => setActive(index)}><img src={item.src} alt={item.title} width="900" height={item.src.includes('lounge') ? 700 : 600} loading="lazy" /><span><b>{item.title}</b><small>{item.note}</small></span><ArrowUpRight aria-hidden="true" /></button>)}
+        {gallery.map((item, index) => <button key={item.src} className={`gallery-item gallery-item-${index + 1}`} onClick={() => setActive(index)}><img src={item.src} alt={item.title} width="1200" height="900" loading="lazy" /><span><b>{item.title}</b><small>{item.note}</small></span><ArrowUpRight aria-hidden="true" /></button>)}
       </div>
-      {active !== null ? <div className="lightbox" role="dialog" aria-modal="true" aria-label={`Просмотр: ${gallery[active].title}`} onMouseDown={(event) => { if (event.target === event.currentTarget) setActive(null) }}><button ref={closeButton} className="lightbox-close" onClick={() => setActive(null)} aria-label="Закрыть изображение"><X aria-hidden="true" /></button><button className="lightbox-arrow prev" onClick={() => setActive((active - 1 + gallery.length) % gallery.length)} aria-label="Предыдущее изображение"><ArrowLeft aria-hidden="true" /></button><figure><img src={gallery[active].src} alt={gallery[active].title} width="900" height={gallery[active].src.includes('lounge') ? 700 : 600} /><figcaption><b>{gallery[active].title}</b><span>{gallery[active].note}</span></figcaption></figure><button className="lightbox-arrow next" onClick={() => setActive((active + 1) % gallery.length)} aria-label="Следующее изображение"><ArrowRight aria-hidden="true" /></button></div> : null}
+      {active !== null ? <div className="lightbox" role="dialog" aria-modal="true" aria-label={`Просмотр: ${gallery[active].title}`} onMouseDown={(event) => { if (event.target === event.currentTarget) setActive(null) }}><button ref={closeButton} className="lightbox-close" onClick={() => setActive(null)} aria-label="Закрыть изображение"><X aria-hidden="true" /></button><button className="lightbox-arrow prev" onClick={() => setActive((active - 1 + gallery.length) % gallery.length)} aria-label="Предыдущее изображение"><ArrowLeft aria-hidden="true" /></button><figure><img src={gallery[active].src} alt={gallery[active].title} width="1200" height="900" /><figcaption><b>{gallery[active].title}</b><span>{gallery[active].note}</span></figcaption></figure><button className="lightbox-arrow next" onClick={() => setActive((active + 1) % gallery.length)} aria-label="Следующее изображение"><ArrowRight aria-hidden="true" /></button></div> : null}
     </section>
   )
 }

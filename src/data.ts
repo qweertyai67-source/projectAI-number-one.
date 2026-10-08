@@ -58,7 +58,7 @@ export const zones: Zone[] = [
     price: 190,
     available: ZONE_CAPACITIES.standard - occupiedSeatNumbers.standard.length,
     capacity: ZONE_CAPACITIES.standard,
-    image: '/zone-standard.svg',
+    image: '/photos/standard-zone.png',
     accent: 'mint',
   },
   {
@@ -74,7 +74,7 @@ export const zones: Zone[] = [
     price: 290,
     available: ZONE_CAPACITIES.vip - occupiedSeatNumbers.vip.length,
     capacity: ZONE_CAPACITIES.vip,
-    image: '/zone-vip.svg',
+    image: '/photos/main-hall.png',
     accent: 'amber',
   },
   {
@@ -90,7 +90,7 @@ export const zones: Zone[] = [
     price: 1290,
     available: ZONE_CAPACITIES.team - occupiedSeatNumbers.team.length,
     capacity: ZONE_CAPACITIES.team,
-    image: '/zone-team.svg',
+    image: '/photos/dark-hall.png',
     accent: 'mint',
   },
 ]
@@ -116,10 +116,16 @@ export const perks = [
 ] as const
 
 export const gallery = [
-  { src: '/hero-cave.svg', title: 'Главный зал', note: 'Концептуальная визуализация макета' },
-  { src: '/zone-vip.svg', title: 'VIP Chamber', note: 'Демонстрационная иллюстрация зоны' },
-  { src: '/zone-team.svg', title: 'Team Vault', note: 'Демонстрационная иллюстрация комнаты' },
-  { src: '/gallery-lounge.svg', title: 'Lounge', note: 'Концептуальная визуализация отдыха' },
+  { src: '/photos/green-corridor.png', title: 'Зелёный коридор', note: 'Фирменное освещение Gamer Cave' },
+  { src: '/photos/main-hall.png', title: 'Главный зал', note: 'Реальная игровая зона клуба' },
+  { src: '/photos/standard-zone.png', title: 'Игровые места', note: 'Станции Standard в клубе' },
+  { src: '/photos/exterior.png', title: 'Фасад клуба', note: 'Вход в Gamer Cave' },
+  { src: '/photos/pc-closeup.png', title: 'Игровая станция', note: 'Комплектующие с RGB-подсветкой' },
+  { src: '/photos/pc-row.png', title: 'Ряд компьютеров', note: 'Системные блоки Gamer Cave' },
+  { src: '/photos/reception-logo.png', title: 'Фирменный стиль', note: 'Логотип в интерьере клуба' },
+  { src: '/photos/branded-zone.png', title: 'Бренд-зона', note: 'Места рядом с фирменной стеной' },
+  { src: '/photos/dark-hall.png', title: 'Тёмный зал', note: 'Атмосферная игровая зона' },
+  { src: '/photos/entrance-logo.png', title: 'Входная зона', note: 'Фирменная навигация Gamer Cave' },
 ]
 
 export const reviews = [

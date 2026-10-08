@@ -121,7 +121,7 @@ function Hero() {
   return (
     <section id="club" className="hero section-shell">
       <div className="hero-media" aria-hidden="true">
-        <img src="/photos/main-hall.png" alt="" width="919" height="645" fetchPriority="high" />
+        <img src="./photos/main-hall.png" alt="" width="919" height="645" fetchPriority="high" />
         <div className="hero-scan" />
       </div>
       <div className="hero-copy reveal-sequence">

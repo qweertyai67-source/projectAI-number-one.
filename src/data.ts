@@ -1,5 +1,7 @@
 export type ZoneId = 'standard' | 'vip' | 'team'
 
+const assetUrl = (path: string) => `./${path}`
+
 export const ZONE_CAPACITIES: Record<ZoneId, number> = {
   standard: 20,
   vip: 7,
@@ -58,7 +60,7 @@ export const zones: Zone[] = [
     price: 190,
     available: ZONE_CAPACITIES.standard - occupiedSeatNumbers.standard.length,
     capacity: ZONE_CAPACITIES.standard,
-    image: '/photos/standard-zone.png',
+    image: assetUrl('photos/standard-zone.png'),
     accent: 'mint',
   },
   {
@@ -74,7 +76,7 @@ export const zones: Zone[] = [
     price: 290,
     available: ZONE_CAPACITIES.vip - occupiedSeatNumbers.vip.length,
     capacity: ZONE_CAPACITIES.vip,
-    image: '/photos/main-hall.png',
+    image: assetUrl('photos/main-hall.png'),
     accent: 'amber',
   },
   {
@@ -90,7 +92,7 @@ export const zones: Zone[] = [
     price: 1290,
     available: ZONE_CAPACITIES.team - occupiedSeatNumbers.team.length,
     capacity: ZONE_CAPACITIES.team,
-    image: '/photos/dark-hall.png',
+    image: assetUrl('photos/dark-hall.png'),
     accent: 'mint',
   },
 ]
@@ -116,16 +118,16 @@ export const perks = [
 ] as const
 
 export const gallery = [
-  { src: '/photos/green-corridor.png', title: 'Зелёный коридор', note: 'Фирменное освещение Gamer Cave' },
-  { src: '/photos/main-hall.png', title: 'Главный зал', note: 'Реальная игровая зона клуба' },
-  { src: '/photos/standard-zone.png', title: 'Игровые места', note: 'Станции Standard в клубе' },
-  { src: '/photos/exterior.png', title: 'Фасад клуба', note: 'Вход в Gamer Cave' },
-  { src: '/photos/pc-closeup.png', title: 'Игровая станция', note: 'Комплектующие с RGB-подсветкой' },
-  { src: '/photos/pc-row.png', title: 'Ряд компьютеров', note: 'Системные блоки Gamer Cave' },
-  { src: '/photos/reception-logo.png', title: 'Фирменный стиль', note: 'Логотип в интерьере клуба' },
-  { src: '/photos/branded-zone.png', title: 'Бренд-зона', note: 'Места рядом с фирменной стеной' },
-  { src: '/photos/dark-hall.png', title: 'Тёмный зал', note: 'Атмосферная игровая зона' },
-  { src: '/photos/entrance-logo.png', title: 'Входная зона', note: 'Фирменная навигация Gamer Cave' },
+  { src: assetUrl('photos/green-corridor.png'), title: 'Зелёный коридор', note: 'Фирменное освещение Gamer Cave' },
+  { src: assetUrl('photos/main-hall.png'), title: 'Главный зал', note: 'Реальная игровая зона клуба' },
+  { src: assetUrl('photos/standard-zone.png'), title: 'Игровые места', note: 'Станции Standard в клубе' },
+  { src: assetUrl('photos/exterior.png'), title: 'Фасад клуба', note: 'Вход в Gamer Cave' },
+  { src: assetUrl('photos/pc-closeup.png'), title: 'Игровая станция', note: 'Комплектующие с RGB-подсветкой' },
+  { src: assetUrl('photos/pc-row.png'), title: 'Ряд компьютеров', note: 'Системные блоки Gamer Cave' },
+  { src: assetUrl('photos/reception-logo.png'), title: 'Фирменный стиль', note: 'Логотип в интерьере клуба' },
+  { src: assetUrl('photos/branded-zone.png'), title: 'Бренд-зона', note: 'Места рядом с фирменной стеной' },
+  { src: assetUrl('photos/dark-hall.png'), title: 'Тёмный зал', note: 'Атмосферная игровая зона' },
+  { src: assetUrl('photos/entrance-logo.png'), title: 'Входная зона', note: 'Фирменная навигация Gamer Cave' },
 ]
 
 export const reviews = [
